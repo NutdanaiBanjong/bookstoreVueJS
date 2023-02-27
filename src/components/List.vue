@@ -5,7 +5,6 @@
       <div className="px-4 py-2 col-span-2">
         <h1 className="text-2xl">Promotion</h1> <hr className="border border-white my-2"/>
         <p> โปรโมชั่นซื้อหนังสือHarry Potterที่ร้าน BookStore ทุกภาคทั้ง7เล่ม</p>
-        <h1>{{ id }}</h1>
         <ul className="list-disc list-inside space-y-1 px-5">
             <li>ซื้อเล่มไม่ซํ้ากัน2เล่ม ลด 10% ของทั้ง2เล่ม</li>
             <li>ซื้อเล่มไม่ซํ้ากัน3เล่ม ลด 20% ของทั้ง3เล่ม</li>
@@ -16,12 +15,11 @@
         </ul>
       </div>
       <div class="px-4 py-2">
-          <h1 class="text-2xl">Cart</h1> <hr className="border border-white my-2"/>
+          <h1 class="text-2xl">Cart</h1> <hr class="border border-white my-2"/>
           <div v-for="showBook in cartToChild" :key="showBook.id" >
             <div class="flex justify-between">
               <h1> {{showBook.title}} </h1>
               <h1> x {{ showBook.amount }} เล่ม</h1>
-
             </div>
           </div>          
             <p class="flex justify-end">ราคา {{ priceToChild }} THB</p> 

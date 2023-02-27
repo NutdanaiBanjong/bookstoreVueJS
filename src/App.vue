@@ -69,11 +69,12 @@ export default {
        discountCal() {
         let discount = 0;
         const uniqueSubjectCount = this.cart.length; 
-        // console.log(uniqueSubjectCount,"test") 
+        // console.log(uniqueSubjectCount,'เล่มไม่ซํ้า') 
         const discountPercent = (uniqueSubjectCount - 1) * 10; 
         discount = discountPercent * uniqueSubjectCount; 
         const min = this.minDuplicateBooks();
-        console.log(discount,"ส่วนลด")
+        // console.log(discount,'ส่วนลด')
+        // console.log(min ,'min')
         return discount * min; 
       },
       priceTotal(){

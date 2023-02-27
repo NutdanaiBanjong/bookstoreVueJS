@@ -5,7 +5,6 @@
           <p> ชาลี </p>
         </div>
     </div>
-    
 </template>
 
 <script>
